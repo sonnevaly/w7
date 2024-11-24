@@ -1,7 +1,87 @@
+/* General reset for padding and margin */
 body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2; /* Light grey background */
   display: flex;
   justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
-.email {
-  width: 500px;
+
+/* Center the form with a border and padding */
+form {
+  background-color: #ffffff; /* White background */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  width: 300px;
+  text-align: center;
+}
+
+/* Form header styling */
+form h1 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #333333; /* Dark grey for text */
+}
+
+/* Styling for the container */
+.container {
+  text-align: left;
+}
+
+/* Label styling */
+label {
+  font-size: 14px;
+  color: #555555; /* Medium grey for labels */
+  margin-bottom: 5px;
+  display: block;
+}
+
+/* Input fields styling */
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+/* Checkbox and its label */
+input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+label[for="remember"] {
+  font-size: 12px;
+  color: #666666;
+}
+
+/* Login button styling */
+.login-button input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #4caf50; /* Green background */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the button */
+.login-button input[type="submit"]:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+/* Small screen adjustments */
+@media (max-width: 400px) {
+  form {
+    width: 90%;
+  }
 }
